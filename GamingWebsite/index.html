@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyan's Game Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Welcome to <span class="highlight">Riyan's Game Hub</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#shooting">Shooting</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#action">Action</a></li>
+                <li><a href="#simulator">Simulator</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="games">
+        <h2 id="shooting">🎯 Shooting Game</h2>
+        <iframe src="games/shooting.html"></iframe>
+
+        <h2 id="racing">🏎️ Racing Game</h2>
+        <iframe src="games/racing.html"></iframe>
+
+        <h2 id="action">⚔️ Action Game</h2>
+        <iframe src="games/action.html"></iframe>
+
+        <h2 id="simulator">🕹️ Simulator Game</h2>
+        <iframe src="games/simulator.html"></iframe>
+    </section>
+
+    <section id="timer">
+        <h2>⏳ Game Timer</h2>
+        <p>Time Left: <span id="countdown">60</span> seconds</p>
+    </section>
+
+    <section id="feedback">
+        <h2>💬 Feedback</h2>
+        <textarea placeholder="Write your feedback..."></textarea>
+        <button onclick="submitFeedback()">Submit</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Riyan's Game Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
