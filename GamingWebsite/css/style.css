@@ -3,6 +3,8 @@ body {
     background: linear-gradient(to right, #ff8eb2, #6a5acd);
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -55,4 +57,3 @@ footer {
     padding: 10px;
     background: rgba(0, 0, 0, 0.7);
 }
-
