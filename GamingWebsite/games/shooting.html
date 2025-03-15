@@ -4,23 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shooting Game</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: black; text-align: center; color: white; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Shooting Game</h1>
-        <a href="../index.html">Back to Home</a>
-    </header>
-    <canvas id="shootingCanvas"></canvas>
+    <h1>🔫 Shooting Game</h1>
+    <p>Click to shoot!</p>
     <script>
-        let canvas = document.getElementById("shootingCanvas");
-        let ctx = canvas.getContext("2d");
-        canvas.width = 500;
-        canvas.height = 300;
-        canvas.addEventListener("click", (e) => {
-            ctx.fillStyle = "red";
-            ctx.fillRect(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop, 10, 10);
-        });
+        document.body.addEventListener("click", () => alert("Bang! You shot!"));
     </script>
 </body>
 </html>
