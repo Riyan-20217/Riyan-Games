@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: black; color: white; text-align: center; }
+        table { margin: auto; border-collapse: collapse; }
+        td { width: 60px; height: 60px; text-align: center; font-size: 2em; cursor: pointer; border: 1px solid white; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Tic-Tac-Toe</h1>
-        <a href="../index.html">Back to Home</a>
-    </header>
-    <div id="game-board">
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-        <div class="cell" onclick="makeMove(this)"></div>
-    </div>
+    <h1>❌⭕ Tic-Tac-Toe</h1>
+    <table>
+        <tr><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td></tr>
+        <tr><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td></tr>
+        <tr><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td><td onclick="makeMove(this)"></td></tr>
+    </table>
     <script>
         let turn = "X";
         function makeMove(cell) {
-            if (!cell.innerText) {
-                cell.innerText = turn;
-                turn = turn === "X" ? "O" : "X";
+            if (!cell.textContent) {
+                cell.textContent = turn;
+                turn = (turn === "X") ? "O" : "X";
             }
         }
     </script>
