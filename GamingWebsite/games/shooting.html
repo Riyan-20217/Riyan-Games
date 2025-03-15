@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Shooting Game</h1>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <canvas id="shootingCanvas"></canvas>
+    <script>
+        let canvas = document.getElementById("shootingCanvas");
+        let ctx = canvas.getContext("2d");
+        canvas.width = 500;
+        canvas.height = 300;
+        canvas.addEventListener("click", (e) => {
+            ctx.fillStyle = "red";
+            ctx.fillRect(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop, 10, 10);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <div id="game-board">
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+    </div>
+    <script>
+        let turn = "X";
+        function makeMove(cell) {
+            if (!cell.innerText) {
+                cell.innerText = turn;
+                turn = turn === "X" ? "O" : "X";
+            }
+        }
+    </script>
+</body>
+</html>

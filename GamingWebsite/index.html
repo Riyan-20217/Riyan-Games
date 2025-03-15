@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyan's Gaming Zone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="styled-name">Welcome to Riyan's play Zone</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tic-tac-toe">Tic-Tac-Toe</a></li>
+                <li><a href="#shooting-game">Shooting Game</a></li>
+                <li><a href="#racing-game">Racing Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Choose Your Game</h2>
+        <p>Enjoy our exciting games and challenge your friends!</p>
+        <p id="timer">Time Spent on Site: <span id="time-spent">0</span> seconds</p>
+    </section>
+
+    <section id="tic-tac-toe">
+        <h2>Tic-Tac-Toe</h2>
+        <div id="game-board">
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+        </div>
+    </section>
+
+    <section id="shooting-game">
+        <h2>Shooting Game</h2>
+        <canvas id="shootingCanvas"></canvas>
+    </section>
+
+    <section id="racing-game">
+        <h2>Racing Game</h2>
+        <p>Coming Soon...</p>
+    </section>
+
+    <footer>
+        <p>Designed by <span id="styled-name">Riyan</span> &copy; 2025</p>
+    </footer>
+</body>
+</html>
